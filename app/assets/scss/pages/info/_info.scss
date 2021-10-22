@@ -1,0 +1,137 @@
+.sellers-nav {
+  margin-bottom: 50px;
+
+  &__arrow-mobile {
+    display: none;
+  }
+
+  &__title {
+    margin-left: 35px;
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 550;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__item {
+    width: 100%;
+    height: 100%;
+    max-width: 130px;
+    max-height: 130px;
+    padding: 14px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    &.active {
+      background-color: #fff;
+      border-radius: 10px;
+    }
+  }
+
+  &__item-desc {
+    height: 30px;
+    padding-top: 15px;
+    font-size: 12px;
+    width: 97px;
+    text-align: center;
+  }
+
+  &__desc-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sellers-nav {
+    &__title {
+      margin-left: 0;
+      font-size: 36px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sellers-nav {
+    &__arrow-mobile {
+      display: block;
+      margin-left: 17px;
+    }
+
+    &__title {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding: 16px 0;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 500;
+      background-color: #fff;
+    }
+
+    &__title-text {
+      width: 100%;
+      margin-left: auto;
+      margin-right: 14px;
+    }
+
+    &__menu {
+      margin-left: -20px;
+      flex-direction: column;
+    }
+
+    &__item {
+      max-width: 100%;
+      padding: 0 0 0 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #fff;
+
+      &:last-child {
+        .sellers-nav__item-desc {
+          border-bottom: none;
+        }
+      }
+
+      &.active {
+        border-radius: 0;
+      }
+
+      & svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        margin-bottom: 3px;
+      }
+    }
+
+    &__item-desc {
+      width: 100%;
+      padding-top: 0;
+      font-size: 14px;
+      padding: 15px 0 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    &__desc-mobile {
+      display: inline-block;
+      padding-right: 6px;
+
+      & svg {
+        display: block;
+      }
+    }
+  }
+}

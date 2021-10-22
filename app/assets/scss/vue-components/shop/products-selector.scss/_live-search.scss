@@ -1,0 +1,179 @@
+@import "~/assets/scss/abstracts/mixins";
+
+.live-search {
+  position: relative;
+
+  &.no-padding {
+    padding: 0;
+  }
+
+  &__dropdown {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    z-index: 6;
+  }
+
+  &__dropdown-inner {
+    @include custom-scroll;
+    max-height: 368px;
+    // margin-right: 3px;
+    overflow: auto;
+  }
+
+  &__row {
+    padding: 5px 15px;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    &_empty {
+      cursor: initial;
+    }
+
+    &:not(.live-search__row_empty):hover {
+      background-color: #F2F2F2;
+    }
+  }
+
+  &__img-wrap {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__img-subcol {
+    width: 40px;
+  }
+
+  &__info-col,
+  &__code-col,
+  &__old-price-col,
+  &__price-subcol,
+  &__quantity-col {
+    box-sizing: border-box;
+    padding-right: 15px;
+  }
+
+  &__info-col {
+    display: flex;
+    width: 50%;
+  }
+  &__code-col {
+    width: 18%;
+  }
+  &__old-price-subcol {
+    width: 50%;
+  }
+
+  &__price-subcol {
+    width: 50%;
+  }
+
+  &__price {
+    width: 32%;
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .live-search {
+    &__dropdown {
+      top: 45px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    &__quantity-col {
+      width: 100% !important;
+      padding-right: 0;
+    }
+
+    &__row {
+      flex-direction: column;
+      padding: 5px 10px 0 10px;
+      margin-bottom: 20px;
+
+      &:hover {
+        background-color: inherit;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.mob-hide {
+      display: none;
+    }
+
+    &__old-price-col {
+      display: none;
+    }
+
+    &__price {
+      width: 100%;
+      padding-left: 40px;
+      box-sizing: border-box;
+    }
+
+    &__code-col {
+      display: none;
+    }
+
+    &__info-col {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    &__category-info-col {
+      width: 80%;
+    }
+
+    &__quantity-col {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      width: 50%;
+      font-size: 12px;
+    }
+
+    &__mob-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__quantity {
+      order: -1;
+    }
+
+    &__product-name {
+      width: 98% !important;
+    }
+
+    &__label {
+      display: none;
+    }
+
+    &__category {
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+
+    &__category-row {
+      flex-direction: row;
+    }
+
+    &__old-price-subcol {
+      width: auto;
+      margin-right: 20px;
+    }
+
+    &__category-price {
+      align-items: flex-end;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0;
+    }
+  }
+}

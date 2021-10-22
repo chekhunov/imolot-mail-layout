@@ -1,0 +1,45 @@
+.space-btw {
+  &__title {
+    font-weight: 550;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    align-self: baseline;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 50px;
+    
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  span {
+    &:last-child {
+      text-align: right;
+      max-width: 60%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .space-btw {
+    font-size: 12px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+    
+    &__item {
+      margin-bottom: 13px;
+    }
+  }
+}
