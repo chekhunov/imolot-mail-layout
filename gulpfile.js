@@ -41,7 +41,11 @@ function htmlinclude() {
     'app/html/pages/index.html',
     'app/html/pages/kratom1.html',
     'app/html/pages/kratom2.html',
-    'app/html/pages/molot1.html',
+    'app/html/pages/molot-registering.html',
+    'app/html/pages/molot-forgot-password.html',
+    'app/html/pages/molot-change-password.html',
+    'app/html/pages/molot-add-product.html',
+    'app/html/pages/molot-payment-declined.html',
   ])
     .pipe(
       fileinclude({
