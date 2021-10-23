@@ -46,6 +46,10 @@ function htmlinclude() {
     'app/html/pages/molot-change-password.html',
     'app/html/pages/molot-add-product.html',
     'app/html/pages/molot-payment-declined.html',
+    'app/html/pages/molot-remove.html',
+    'app/html/pages/molot-recovery.html',
+    'app/html/pages/molot-nomoderation.html',
+    'app/html/pages/molot-vip-confirmed.html',
   ])
     .pipe(
       fileinclude({
