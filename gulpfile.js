@@ -50,6 +50,7 @@ function htmlinclude() {
     'app/html/pages/molot-recovery.html',
     'app/html/pages/molot-nomoderation.html',
     'app/html/pages/molot-vip-confirmed.html',
+    'app/html/pages/molot-answer.html',
   ])
     .pipe(
       fileinclude({
