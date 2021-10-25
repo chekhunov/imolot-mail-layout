@@ -38,19 +38,13 @@ function browsersync() {
 
 function htmlinclude() {
   return src([
-    'app/html/pages/index.html',
-    'app/html/pages/kratom1.html',
-    'app/html/pages/kratom2.html',
-    'app/html/pages/molot-registering.html',
-    'app/html/pages/molot-forgot-password.html',
-    'app/html/pages/molot-change-password.html',
-    'app/html/pages/molot-add-product.html',
-    'app/html/pages/molot-payment-declined.html',
-    'app/html/pages/molot-remove.html',
-    'app/html/pages/molot-recovery.html',
-    'app/html/pages/molot-nomoderation.html',
-    'app/html/pages/molot-vip-confirmed.html',
-    'app/html/pages/molot-answer.html',
+    'app/html/pages/molot-confirm-email.html',
+    'app/html/pages/molot-delivery-products.html',
+    'app/html/pages/molot-end-subscriptions.html',
+    'app/html/pages/molot-promo.html',
+    'app/html/pages/molot-leave-feedback.html',
+    'app/html/pages/molot-vip-noconfirmed.html',
+    'app/html/pages/molot-vip-end-period.html',
   ])
     .pipe(
       fileinclude({
