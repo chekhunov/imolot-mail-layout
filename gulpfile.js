@@ -38,13 +38,9 @@ function browsersync() {
 
 function htmlinclude() {
   return src([
-    'app/html/pages/molot-confirm-email.html',
-    'app/html/pages/molot-delivery-products.html',
-    'app/html/pages/molot-end-subscriptions.html',
-    'app/html/pages/molot-promo.html',
-    'app/html/pages/molot-leave-feedback.html',
-    'app/html/pages/molot-vip-noconfirmed.html',
-    'app/html/pages/molot-vip-end-period.html',
+    'app/html/pages/molot-new-order.html',
+    'app/html/pages/molot-new-order2.html',
+    'app/html/pages/molot-order-processed.html',
   ])
     .pipe(
       fileinclude({
