@@ -37,7 +37,7 @@ function browsersync() {
 }
 
 function htmlinclude() {
-  return src(['app/html/pages/molot-review-to.html'])
+  return src(['app/html/pages/molot-commercial.html'])
     .pipe(
       fileinclude({
         prefix: '@@',
